@@ -44,7 +44,7 @@ title: Welcome
                 <th scope="row" style="width: 20%">{{ news_item.date }}</th>
                 <td>
                     {% if news_item.link %}
-                    <a href="{{ news_item.link }}" rel="external nofollow noopener" target="_blank">{{ news_item.title }}</a>
+                    <a href="{{ news_item.link }}">{{ news_item.title }}</a>
                     {{ news_item.text }}
                     {% else %}
                     {{ news_item.text }}
