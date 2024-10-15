@@ -1,11 +1,46 @@
+/* Define CSS variables for light and dark modes */
+:root {
+    --background-color: rgb(255, 255, 255);
+    --text-color: #000000;
+    --navbar-background: #f8f9fa;
+    --link-color: #000000;
+    --header-background: darkgray;
+    --header-color: white;
+    --border-color: black;
+    --caption-color: #555;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: rgb(50, 50, 50);
+        --bs-body-bg: rgb(50, 50, 50)!important;
+        --text-color: #ffffff;
+        --bs-body-color: #ffffff!important;
+        --bs-table-color: #ffffff!important;
+        --bs-table-color-state: #ffffff!important;
+        --bs-table-color-type: #ffffff!important;
+        --bs-link-color-rgb: 255, 208, 0!important;
+        --navbar-background: #343a40;
+        --link-color: #ffffff;
+        --header-background: #555;
+        --header-color: white;
+        --border-color: #ffffff;
+        --caption-color: #bbb;
+    }
+}
+
+
+
 html, body {
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .navbar-brand, .nav-link {
     font-size: calc(1rem + .5vw) !important;
     font-weight: 500;
+    color: var(--link-color);
 }
 
 .blog-post {
@@ -19,7 +54,7 @@ html, body {
 .blog-post img {
     max-height: 400px;
     max-width: 80%;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     display: block;
     margin: 0 auto;
@@ -31,7 +66,7 @@ html, body {
 
 .blog-list-item .title, .paper-title a {
     font-weight: bold;
-    color: #000000;
+    color: var(--link-color);
     text-decoration: none;
     display: block;
     width: 100%;
@@ -39,7 +74,7 @@ html, body {
 
 .blog-list-item .date, .paper-author, .paper-venue {
     font-weight: lighter;
-    color: #000000;
+    color: var(--link-color);
     display: block;
     text-align: right;
 }
@@ -65,7 +100,7 @@ html, body {
 .caption {
     display: block;
     font-size: 14px;
-    color: #555;
+    color: var(--caption-color);
     font-style: italic;
 }
 
@@ -74,27 +109,27 @@ html, body {
 }
 
 .frame {
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     overflow: hidden;
     width: 100%;
 }
 
 h2 {
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     padding: 0px 10px 0.1em 10px;
     display: inline-block;
     margin: 0;
     position: relative;
-    background-color: darkgray;
-    color: white !important;
+    background-color: var(--header-background);
+    color: var(--header-color) !important;
 }
 
 .header-line {
     flex-grow: 1;
     height: 1px;
-    background-color: black;
+    background-color: var(--border-color);
     margin-left: 0px;
     margin-top: -1.8rem;
     margin-bottom: 1.8rem;
@@ -108,7 +143,7 @@ h2 {
     max-height: 10rem;
     border-radius: 5px;
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
 }
 
 .hidden .spotlight-img, #headerToggle+.publication.hidden .spotlight-img {
@@ -133,7 +168,7 @@ h2 {
 }
 
 .round-image {
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     max-width: 160px;
     max-height: 160px;
     background-size: cover;
@@ -167,7 +202,7 @@ h2 {
 }
 
 .about a {
-    color: black;
+    color: var(--link-color);
     text-decoration: underline;
 }
 
@@ -200,13 +235,16 @@ h2 {
     font-size: 0.8em;
 }
 
+.table th, .table td {
+    color: var(--text-color)!important;
+}
+
 .spotlight, .blog-item-title {
     display: flex !important;
 }
 
 /* Mobile styles */
 @media screen and (max-width: 1000px) {
-
     .round-image {
         max-width: 100px;
         max-height: 100px;
@@ -234,7 +272,6 @@ h2 {
 }
 
 @media screen and (max-width: 512px) {
-
     .navbar-brand, .nav-link {
         font-size: calc(1.325rem + .9vw) !important;
     }
@@ -293,7 +330,6 @@ h2 {
 
 /* Larger screen styles */
 @media screen and (min-width: 992px) {
-
     .navbar-brand, .nav-link {
         font-size: calc(1rem + .5vw) !important;
     }

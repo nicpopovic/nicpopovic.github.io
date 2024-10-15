@@ -60,7 +60,7 @@ title: Welcome
 
 <h2 id="publicationsHeader">Selected Publications</h2>
 
-<span id="headerToggle" style="cursor: pointer; color: blue;">(show all)</span>
+<span id="headerToggle" style="cursor: pointer; color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));">(show all)</span>
 
 <div id="publicationsContainer">
     <ul class="list-group-flush p-0">

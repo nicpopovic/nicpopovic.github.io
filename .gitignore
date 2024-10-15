@@ -1,0 +1,34 @@
+# Jekyll Generated Files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Logs and Databases
+*.log
+*.sql
+*.sqlite3
+
+# Temporary and backup files
+*.DS_Store
+*.swp
+*.swo
+*~
+
+# System Files
+Thumbs.db
+ehthumbs.db
+.DS_Store
+
+# Bundler dependencies
+/vendor/bundle
+.bundle
+
+# Jekyll Plugins
+/vendor/
+
+# Node modules (if using npm or yarn for dependencies)
+node_modules/
+
+# Cache Files
+.cache/
