@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '../css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark"
+        style="background-color: darkgray; border-bottom: 1px solid black;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">np</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog/">blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content landingpage-post">
+        {% for publication in site.data.publications %}
+        {% if publication.title == page.title %}
+        <div class="post-date">{{ publication.year }} ({{ publication.venue }})</div>
+        <h1>{{ publication.title }}</h1>
+        <div class="post-subtitle">{{ publication.authors }}</div>
+        <br>
+        <div><strong>TLDR:</strong> {{ publication.tldr }}</div>
+        <br>
+
+        <div id="linkscontainer">
+            {% for publication in site.data.publications %}
+            {% if publication.title == page.title %}
+                <div class="d-flex justify-content-center">
+                    <a href="{{ publication.pdf_link }}" class="btn btn-outline-primary mx-2" role="button">PDF</a>
+                    {% if publication.video_link %}
+                        <a href="{{ publication.video_link }}" class="btn btn-outline-primary mx-2" role="button">VIDEO</a>
+                    {% endif %}
+                    {% if publication.code_link %}
+                        <a href="{{ publication.code_link }}" class="btn btn-outline-primary mx-2" role="button">CODE</a>
+                    {% endif %}
+                    {% if publication.demo_link %}
+                        <a href="{{ publication.demo_link }}" class="btn btn-outline-primary mx-2" role="button">DEMO</a>
+                    {% endif %}
+                    {% if publication.post_link %}
+                        <a href="{{ publication.post_link }}" class="btn btn-outline-primary mx-2" role="button">BLOG</a>
+                    {% endif %}
+                </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <h2>Abstract</h2>
+        <p class="landingpage-abstract">{{ publication.abstract }}</p>
+        {% endif %}
+        {% endfor %}
+        {{ content }}
+        {% for publication in site.data.publications %}
+        {% if publication.title == page.title %}
+        {% if publication.video_link %}
+        <h2>Video</h2>
+        <iframe class="frame" src="{{ publication.video_link }}" width="100%" height="460px"></iframe>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <footer class="text-center fs-6 fw-lighter">© 2024 Nicholas Popovič</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <script>
+        document.querySelectorAll('h2').forEach(h2 => {
+            h2.classList.add('text-lowercase');
+            const line = document.createElement('div');
+            line.classList.add('header-line');
+            h2.parentNode.insertBefore(line, h2.nextSibling);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+- title: "The Effects of Hallucinations in Synthetic Training Data for Relation Extraction"
+  authors: "Steven Rogulsky, <u>Nicholas Popovič</u>, Michael Färber"
+  year: "2024"
+  venue: "KBC-LM @ ISWC (workshop)"
+  pdf_link: "https://arxiv.org/pdf/2410.08393"
+  type: "workshop"
+  spotlight: false
+
+- title: "Embedded Named Entity Recognition using Probing Classifiers"
+  authors: "<u>Nicholas Popovič</u>, Michael Färber"
+  year: "2024"
+  venue: "EMNLP"
+  pdf_link: "https://arxiv.org/pdf/2403.11747"
+  type: "long"
+  spotlight: true
+  image: "/images/ember-spotlight.gif"
+  code_link: "https://github.com/nicpopovic/EMBER"
+  abstract: "Streaming text generation, has become a common way of increasing the responsiveness of language model powered applications such as chat assistants. At the same time, extracting semantic information from generated text is a useful tool for applications such as automated fact checking or retrieval augmented generation. Currently, this requires either separate models during inference, which increases computational cost, or destructive fine-tuning of the language model. Instead, we propose an approach called EMBER which enables streaming named entity recognition in decoder-only language models without fine-tuning them and while incurring minimal additional computational cost at inference time. Specifically, our experiments show that EMBER maintains high token generation rates, with only a negligible decrease in speed of around 1% compared to a 43.64% slowdown measured for a baseline. We make our code and data available online, including a toolkit for training, testing, and deploying efficient token classification models optimized for streaming text generation."
+  tldr: "A light-weight method for extracting named entities from generated text during streaming text generation with language models."
+  "link": "/publications/ember"
+
+
+- title: "VOCAB-EXPANDER: A System for Creating Domain-Specific Vocabularies Based on Word Embeddings"
+  authors: "Michael Färber, <u>Nicholas Popovič</u>"
+  year: "2023"
+  venue: "RANLP (demo)"
+  pdf_link: "https://aclanthology.org/2023.ranlp-1.37.pdf"
+  type: "demo"
+  spotlight: false
+  demo_link: "https://vocab-expander.com"
+  code_link: "https://github.com/nicpopovic/VocabExpander"
+
+- title: "Towards solving fuzzy tasks with human feedback: A retrospective of the minerl basalt 2022 competition"
+  authors: "Milani et al."
+  year: "2022"
+  venue: "Competitions Track @ NeurIPS (workshop)"
+  pdf_link: "https://proceedings.mlr.press/v220/milani23a/milani23a.pdf"
+  type: "workshop"
+  spotlight: false
+  code_link: "https://github.com/BASALT-2022-Karlsruhe/ka-basalt-2022"
+
+- title: "Few-Shot Document-Level Relation Extraction"
+  authors: "<u>Nicholas Popovič</u>, Michael Färber"
+  year: "2022"
+  venue: "NAACL"
+  pdf_link: "https://aclanthology.org/2022.naacl-main.421.pdf"
+  type: "long"
+  spotlight: true
+  image: "/images/fredo-spotlight.jpg"
+  code_link: "https://github.com/nicpopovic/FREDo"
+  abstract: "We present FREDo, a few-shot document-level relation extraction (FSDLRE) benchmark. As opposed to existing benchmarks which are built on sentence-level relation extraction corpora, we argue that document-level corpora provide more realism, particularly regarding none-of-the-above (NOTA) distributions. Therefore, we propose a set of FSDLRE tasks and construct a benchmark based on two existing supervised learning data sets, DocRED and sciERC. We adapt the state-of-the-art sentence-level method MNAV to the document-level and develop it further for improved domain adaptation. We find FSDLRE to be a challenging setting with interesting new characteristics such as the ability to sample NOTA instances from the support set. The data, code, and trained models are available online (https://github.com/nicpopovic/FREDo)."
+  tldr: "A document-level benchmark for few-shot relation extraction. More realistic, more difficult."
+  "link": "/publications/fredo"
+
+- title: "AIFB-WebScience at SemEval-2022 Task 12: Relation Extraction First - Using Relation Extraction to Identify Entities"
+  authors: "<u>Nicholas Popovič</u>, Walter Laurito, Michael Färber"
+  year: "2022"
+  venue: "SemEval @ NAACL (workshop)"
+  pdf_link: "https://aclanthology.org/2022.semeval-1.232.pdf"
+  type: "workshop"
+  spotlight: false
+  code_link: "https://github.com/nicpopovic/RE1st"
+
+- title: "Which Publications’ Metadata Are in Which Bibliographic Databases? A System for Exploration"
+  authors: "Michael Färber, Christoph Braun, <u>Nicholas Popovič</u>, Tarek Saier, Kristian Noullet"
+  year: "2022"
+  venue: "BIR @ ECIR (demo)"
+  pdf_link: "https://www.researchgate.net/profile/Michael_Faerber/publication/366634843_Which_Publications'_Metadata_Are_in_Which_Bibliographic_Databases_A_System_for_Exploration/links/63ac10b2c3c99660ebae12b5/Which-Publications-Metadata-Are-in-Which-Bibliographic-Databases-A-System-for-Exploration.pdf"
+  type: "demo"
+  spotlight: false
+  code_link: "https://github.com/kmdn/RefBee"
+
+- title: "Ampacity forecasting from numerical weather predictions: a fusion of the traditional and machine learning methods"
+  authors: "Gabriela Molinar, Johannes Bassler, <u>Nicholas Popovič</u>, Wilhelm Stork"
+  year: "2020"
+  venue: "IEEE ISGT-Europe"
+  pdf_link: "https://ieeexplore.ieee.org/abstract/document/9248877"
+  type: "long"
+  spotlight: false
+
+- title: "From data points to ampacity forecasting: Gated recurrent unit networks"
+  authors: "<u>Nicholas Popovič</u>, Gabriela Molinar, Wilhelm Stork"
+  year: "2018"
+  venue: "IEEE BigDataService"
+  pdf_link: "https://www.researchgate.net/profile/Gabriela-Molinar/publication/326279992_From_Data_Points_to_Ampacity_Forecasting_Gated_Recurrent_Unit_Networks/links/5b5eb625aca272a2d67464da/From-Data-Points-to-Ampacity-Forecasting-Gated-Recurrent-Unit-Networks.pdf"
+  type: "long"
+  spotlight: false
