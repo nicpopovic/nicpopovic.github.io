@@ -7,7 +7,7 @@ title: "Embedded Named Entity Recognition using Probing Classifiers"
 
 <div class="image-caption">
 
-  <iframe class="frame" src="https://ember.nicpopovic.com?__theme=light&__fullscreen=true" frameborder="0" width="100%" height="620" style="width: 100%; height: 620px;"></iframe>
+  <iframe class="frame" src="https://ember.nicpopovic.com/demo/?__theme=light&__fullscreen=true" frameborder="0" width="100%" height="620" style="width: 100%; height: 620px;"></iframe>
 
   <script>
     function adjustIframeHeight() {
