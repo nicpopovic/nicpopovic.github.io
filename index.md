@@ -26,7 +26,7 @@ title: Welcome
             <a href="mailto:popovic@kit.edu">email</a>, 
             <a href="https://www.linkedin.com/in/nicholas-popovic-a585a5243" target="_blank" rel="noopener noreferrer">LinkedIn</a>, 
             <a href="https://twitter.com/nicpopovic" target="_blank" rel="noopener noreferrer">Twitter</a>, 
-            <a href="https://bsky.app/profile/nicpopovic.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a>,
+            <a href="https://bsky.app/profile/nicpopovic.com" target="_blank" rel="noopener noreferrer">Bluesky</a>,
             <a href="https://scholar.google.de/citations?user=b0Q3-DoAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>, or 
             <a href="https://github.com/nicpopovic" target="_blank" rel="noopener noreferrer">GitHub</a>.
         </p>
