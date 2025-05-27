@@ -17,7 +17,7 @@ title: "Embedded Named Entity Recognition using Probing Classifiers"
 
   <script>
     function adjustIframeHeight() {
-      const iframe = document.querySelector('.frame');
+      const iframe = document.querySelector('.gradio-container');
       if (window.innerWidth <= 452) {
         iframe.style.height = '730px'; // Set height to 750px for mobile
       } else {
