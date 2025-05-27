@@ -7,7 +7,13 @@ title: "Embedded Named Entity Recognition using Probing Classifiers"
 
 <div class="image-caption">
 
-  <iframe class="frame" src="https://nicpopovic-ember-chat.hf.space/?__fullscreen=true" frameborder="0" width="100%" height="620" style="width: 100%; height: 620px;"></iframe>
+  <script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.31.0/gradio.js"
+></script>
+
+<gradio-app src="https://nicpopovic-ember-chat.hf.space"></gradio-app>
+
 
   <script>
     function adjustIframeHeight() {
