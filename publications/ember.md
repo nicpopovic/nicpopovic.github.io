@@ -12,7 +12,7 @@ title: "Embedded Named Entity Recognition using Probing Classifiers"
 	src="https://gradio.s3-us-west-2.amazonaws.com/5.31.0/gradio.js"
 ></script>
 
-<gradio-app src="https://nicpopovic-ember-chat.hf.space"></gradio-app>
+<gradio-app src="https://ember.nicpopovic.com/demo/"></gradio-app>
 
 
   <script>
