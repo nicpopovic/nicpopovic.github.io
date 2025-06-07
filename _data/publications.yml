@@ -1,3 +1,11 @@
+- title: "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation"
+  authors: "Salazar et al."
+  year: "2025"
+  venue: "preprint"
+  pdf_link: "https://arxiv.org/pdf/2504.07072"
+  type: "long"
+  spotlight: false
+  
 - title: "The Effects of Hallucinations in Synthetic Training Data for Relation Extraction"
   authors: "Steven Rogulsky, <u>Nicholas Popovič</u>, Michael Färber"
   year: "2024"
