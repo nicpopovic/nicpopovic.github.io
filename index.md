@@ -11,11 +11,8 @@ title: Welcome
     <div class="welcome-text">
         <p>Hi, my name is <strong>Nicholas Popovič</strong>.</p>
         <p>
-            I am a fourth-year PhD student in the 
-            <a href="https://aifb.kit.edu/web/Web_Science" target="_blank" rel="noopener noreferrer">Web Science group</a> 
-            at the <a href="https://www.kit.edu/" target="_blank" rel="noopener noreferrer">Karlsruhe Institute of Technology</a>, 
-            Germany, advised by 
-            <a href="https://sites.google.com/view/michaelfaerber/" target="_blank" rel="noopener noreferrer">Michael Färber</a>.
+            I am a fourth-year PhD student in <a href="https://sites.google.com/view/michaelfaerber/" target="_blank" rel="noopener noreferrer">Michael Färber</a>'s group at <a href="https://tu-dresden.de" target="_blank" rel="noopener noreferrer">TU Dresden</a> & <a href="https://scads.ai" target="_blank" rel="noopener noreferrer">ScaDs.AI</a>.
+            Prior to that I was a member of the <a href="https://aifb.kit.edu/web/Web_Science" target="_blank" rel="noopener noreferrer">Web Science group</a> at <a href="https://www.kit.edu/" target="_blank" rel="noopener noreferrer">Karlsruhe Institute of Technology</a>.
         </p>
         <p>
             My research focuses on natural language processing and machine learning, particularly on 
