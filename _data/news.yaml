@@ -1,3 +1,11 @@
+- date: "June 25, 2025"
+  title: "Tutorial session"
+  link: "https://scads.ai/11th-international-summer-school-on-ai-and-big-data/"  # Optional link
+  text: " at the 11th International Summer School on AI and Big Data about Language Models."
+- date: "Dec 13, 2024"
+  title: "Talk"
+  link: "https://scads.ai/1st-workshop-of-learning-large-language-models-for-knowledge-representation/"  # Optional link
+  text: "on 'Encoding or Decoding? NLU in the Age of Generative Language Models.'"
 - date: "Sep 21, 2024"
   title: "EMBER"
   link: "/publications/ember"  # Optional link
