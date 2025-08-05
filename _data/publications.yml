@@ -8,6 +8,9 @@
   code_link: "https://github.com/nicpopovic/docie-xllm25"
   video_link: "https://webresources1234.s3.eu-north-1.amazonaws.com/docie.m4v"
   "link": "/publications/docie"
+  abstract: "Large, high-quality annotated corpora remain scarce in document-level entity and relation extraction in zero-shot or few-shot settings.In this paper, we present a fully automatic, LLM-based pipeline for synthetic data generation and in-context learning for document-level entity and relation extraction.In contrast to existing approaches that rely on manually annotated demonstrations or direct zero-shot inference, our method combines synthetic data generation with retrieval-based in-context learning, using a reasoning-optimized language model.This allows us to build a high-quality demonstration database without manual annotation and to dynamically retrieve relevant examples at inference time.Based on our approach we produce a synthetic dataset of over 5k Wikipedia abstracts with approximately 59k entities and 30k relation triples.Finally, we evaluate in-context learning performance on the DocIE shared task, extracting entities and relations from long documents in a zero-shot setting.The code and synthetic dataset are made available for future research."
+  tldr: "Synthetic data generation for schema constrained information extraction tasks. Dataset with 5k annotated articles available here: https://huggingface.co/datasets/nicpopovic/vital_articles_synthetic_information_extraction"
+
 
 - title: "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation"
   authors: "Salazar et al."
@@ -82,6 +85,9 @@
   code_link: "https://github.com/nicpopovic/RE1st"
   video_link: "https://s3.amazonaws.com/pf-user-files-01/u-59356/uploads/2022-06-22/id432q3/semeval1080.mp4"
   "link": "/publications/re1st"
+  abstract: "In this paper, we present an end-to-end joint entity and relation extraction approach based on transformer-based language models. We apply the model to the task of linking mathematical symbols to their descriptions in LaTeX documents. In contrast to existing approaches, which perform entity and relation extraction in sequence, our system incorporates information from relation extraction into entity extraction. This means that the system can be trained even on data sets where only a subset of all valid entity spans is annotated. We provide an extensive evaluation of the proposed system and its strengths and weaknesses. Our approach, which can be scaled dynamically in computational complexity at inference time, produces predictions with high precision and reaches 3rd place in the leaderboard of SemEval-2022 Task 12. For inputs in the domain of physics and math, it achieves high relation extraction macro F1 scores of 95.43% and 79.17%, respectively. The code used for training and evaluating our models is available at: https://github.com/nicpopovic/RE1st"
+  tldr: "An end-to-end joint entity and relation extraction approach applied to linking mathematical symbols to their descriptions in LaTeX documents."
+
 
 - title: "Which Publications’ Metadata Are in Which Bibliographic Databases? A System for Exploration"
   authors: "Michael Färber, Christoph Braun, <u>Nicholas Popovič</u>, Tarek Saier, Kristian Noullet"
