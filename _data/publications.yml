@@ -6,7 +6,7 @@
   type: "workshop"
   spotlight: false
   code_link: "https://github.com/nicpopovic/docie-xllm25"
-  video_link: "https://s3.amazonaws.com/pf-user-files-01/u-59356/uploads/2025-07-11/5q13br9/docie.m4v"
+  video_link: "https://webresources1234.s3.eu-north-1.amazonaws.com/docie.m4v"
   "link": "/publications/docie"
 
 - title: "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation"
