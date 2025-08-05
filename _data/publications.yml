@@ -5,6 +5,7 @@
   pdf_link: "https://aclanthology.org/2025.xllm-1.26.pdf"
   type: "workshop"
   spotlight: false
+  code_link: "https://github.com/nicpopovic/docie-xllm25"
   
 - title: "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation"
   authors: "Salazar et al."
