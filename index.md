@@ -77,7 +77,7 @@ title: Welcome
                 </span>
                 {{ publication.authors }}
                 <span class="paper-venue">{{ publication.venue }}, {{ publication.year }},
-                    <a href="{{ publication.pdf_link }}" target="_blank" rel="noopener noreferrer">[PDF]</a>{% if publication.video_link %}, <a href="{{ publication.video_link }}" target="_blank" rel="noopener noreferrer">[VIDEO]</a>{% endif %}{% if publication.code_link %}, <a href="{{ publication.code_link }}" target="_blank" rel="noopener noreferrer">[CODE]</a>{% endif %}{% if publication.demo_link %}, <a href="{{ publication.demo_link }}" target="_blank" rel="noopener noreferrer">[DEMO]</a>{% endif %}{% if publication.post_link %}, <a href="{{ publication.post_link }}">[BLOG]</a>{% endif %}{% if publication.link %}, <a href="{{ publication.link }}">[WEBSITE]</a>{% endif %}
+                    <a href="{{ publication.pdf_link }}" target="_blank" rel="noopener noreferrer">[PDF]</a>{% if publication.code_link %}, <a href="{{ publication.code_link }}" target="_blank" rel="noopener noreferrer">[CODE]</a>{% endif %}{% if publication.demo_link %}, <a href="{{ publication.demo_link }}" target="_blank" rel="noopener noreferrer">[DEMO]</a>{% endif %}{% if publication.post_link %}, <a href="{{ publication.post_link }}">[BLOG]</a>{% endif %}{% if publication.link %}, <a href="{{ publication.link }}">[WEBSITE]</a>{% endif %}
                 </span>
             </div>
         </li>

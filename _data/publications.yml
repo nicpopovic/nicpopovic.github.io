@@ -6,7 +6,9 @@
   type: "workshop"
   spotlight: false
   code_link: "https://github.com/nicpopovic/docie-xllm25"
-  
+  video_link: "https://s3.amazonaws.com/pf-user-files-01/u-59356/uploads/2025-07-11/5q13br9/docie.m4v"
+  "link": "/publications/docie"
+
 - title: "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation"
   authors: "Salazar et al."
   year: "2025"
@@ -79,6 +81,7 @@
   spotlight: false
   code_link: "https://github.com/nicpopovic/RE1st"
   video_link: "https://s3.amazonaws.com/pf-user-files-01/u-59356/uploads/2022-06-22/id432q3/semeval1080.mp4"
+  "link": "/publications/re1st"
 
 - title: "Which Publications’ Metadata Are in Which Bibliographic Databases? A System for Exploration"
   authors: "Michael Färber, Christoph Braun, <u>Nicholas Popovič</u>, Tarek Saier, Kristian Noullet"
