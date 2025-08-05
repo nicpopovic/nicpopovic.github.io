@@ -1,3 +1,11 @@
+- title: "DocIE@XLLM25: In-Context Learning for Information Extraction using Fully Synthetic Demonstrations"
+  authors: "<u>Nicholas Popovič</u>, Ashish Kangen, Tim Schopf, Michael Färber"
+  year: "2025"
+  venue: "XLLM @ ACL (workshop)"
+  pdf_link: "https://aclanthology.org/2025.xllm-1.26.pdf"
+  type: "workshop"
+  spotlight: false
+  
 - title: "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation"
   authors: "Salazar et al."
   year: "2025"
@@ -27,7 +35,6 @@
   tldr: "A light-weight method for extracting named entities from generated text during streaming text generation with language models."
   "link": "/publications/ember"
   "video_link": "https://s3.amazonaws.com/pf-user-files-01/u-59356/uploads/2024-10-28/dd133a2/EMBER%20EMNLP%20presentation.mp4"
-
 
 - title: "VOCAB-EXPANDER: A System for Creating Domain-Specific Vocabularies Based on Word Embeddings"
   authors: "Michael Färber, <u>Nicholas Popovič</u>"
