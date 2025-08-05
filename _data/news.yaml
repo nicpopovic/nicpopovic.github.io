@@ -1,12 +1,16 @@
-- date: "Jun 25, 2025"
+- date: "July 2025"
+  title: "Presented a paper"
+  link: "/publications/docie"  # Optional link
+  text: " at the XLLM workshop at ACL 2025."
+- date: "June 2025"
   title: "Held a tutorial session"
   link: "https://scads.ai/11th-international-summer-school-on-ai-and-big-data/"  # Optional link
   text: " at the 11th International Summer School on AI and Big Data about Language Models."
-- date: "Dec 13, 2024"
+- date: "December 2024"
   title: "Gave a talk"
   link: "https://scads.ai/1st-workshop-of-learning-large-language-models-for-knowledge-representation/"  # Optional link
   text: " on 'Encoding or Decoding? NLU in the Age of Generative Language Models.'"
-- date: "Sep 21, 2024"
+- date: "September 2024"
   title: "EMBER"
   link: "/publications/ember"  # Optional link
-  text: " got accepted to this year's EMNLP as a main conference paper!"
+  text: " got accepted to EMNLP'24 as a main conference paper!"
