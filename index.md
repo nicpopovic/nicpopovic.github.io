@@ -39,7 +39,7 @@ title: Welcome
         <table class="table table-sm table-borderless">
             {% for news_item in site.data.news %}
             <tr>
-                <th scope="row" style="width: 20%">{{ news_item.date }}</th>
+                <th scope="row" style="width: 20%;font-family: monospace;">{{ news_item.date }}</th>
                 <td>
                     {% if news_item.link %}
                     <a href="{{ news_item.link }}">{{ news_item.title }}</a>
