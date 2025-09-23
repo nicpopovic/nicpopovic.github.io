@@ -17,7 +17,7 @@ title: "Extractive Fact Decomposition for Interpretable Natural Language Inferen
         return;
       }
       if (window.innerWidth <= 452) {
-        iframe.style.height = '1000px'; // Set height to 750px for mobile
+        iframe.style.height = '1050px'; // Set height to 750px for mobile
       } else {
         iframe.style.height = '650px'; // Default height for larger screens
       }
