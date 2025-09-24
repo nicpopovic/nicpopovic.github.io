@@ -235,6 +235,7 @@ h2 {
     height: 0;
     transition: opacity 0s ease, height 3s ease;
     pointer-events: none;
+    margin: 0;
 }
 
 #headerToggle {
