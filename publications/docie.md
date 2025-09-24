@@ -29,3 +29,10 @@ title: "DocIE@XLLM25: In-Context Learning for Information Extraction using Fully
   </script>
     <span class="caption">Interactive data viewer.</span>
 </div>
+
+<h2>Poster</h2>
+
+<div class="image-caption">
+  <img class="frame" src="/assets/images/docie/posterdocie.jpg" alt="DocIE Poster" style="max-width: 100%; height: auto;">
+  <span class="caption">DocIE Poster presented at XLLM25.</span>
+</div>
