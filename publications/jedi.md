@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Extractive Fact Decomposition for Interpretable Natural Language Inference in one Forward Pass"
+title: "Extractive Fact Decomposition for Interpretable Natural Language Inference in One Forward Pass"
 ---
 
 <h2>Demo</h2>
