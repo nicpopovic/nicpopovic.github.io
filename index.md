@@ -89,7 +89,7 @@ title: Welcome
         <li class="list-group-item publication">
             <div>
                 <span class="paper-title">
-                    <a href="{% if publication.link %}{{ publication.link }}{% else %}{{ publication.pdf_link }}{% endif %}">{% if publication.spotlight == true %}⭐️{% endif %}{{ publication.title }}</a>
+                    <a href="{% if publication.link %}{{ publication.link }}{% else %}{{ publication.pdf_link }}{% endif %}">{% if publication.spotlight == true %}⭐️ {% endif %}{{ publication.title }}</a>
                 </span>
                 {{ publication.authors }}
                 <span class="paper-venue">{{ publication.venue }}, {{ publication.year }},
