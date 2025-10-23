@@ -56,21 +56,16 @@ title: Welcome
 
 <br>
 
-<h2 id="publicationsHeader">Selected Publications</h2>
-
-<span id="headerToggle" style="cursor: pointer; color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));">(show all)</span>
+<h2 id="publicationsHeader">spotlight</h2>
 
 <div id="publicationsContainer">
     <ul class="list-group-flush p-0">
         {% for publication in site.data.publications %}
-        <li class="list-group-item publication 
-            {% if publication.spotlight == false %}hidden{% endif %} 
-            {% if publication.spotlight == true %}spotlight align-items-stretch{% endif %}">
-            {% if publication.spotlight %}
+        {% if publication.spotlight == true %}
+        <li class="list-group-item publication spotlight align-items-stretch">
             <a href="{% if publication.link %}{{ publication.link }}{% else %}{{ publication.pdf_link }}{% endif %}" target="_blank" rel="noopener noreferrer">
                 <img src="{{ publication.image }}" alt="Publication Image" class="spotlight-img">
             </a>
-            {% endif %}
             <div>
                 <span class="paper-title">
                     <a href="{% if publication.link %}{{ publication.link }}{% else %}{{ publication.pdf_link }}{% endif %}">{{ publication.title }}</a>
@@ -81,29 +76,27 @@ title: Welcome
                 </span>
             </div>
         </li>
+        {% endif %}
         {% endfor %}
     </ul>
 </div>
 
-<script>
-    document.getElementById("headerToggle").onclick = function() {
-        const nonSpotlightPublications = document.querySelectorAll(".publication.hidden");
-        const header = document.getElementById("publicationsHeader");
+<h2 id="publicationsHeader">publications</h2>
 
-        if (nonSpotlightPublications.length > 0) {
-            nonSpotlightPublications.forEach(pub => pub.classList.remove("hidden"));
-            header.textContent = "Publications";
-            this.textContent = "(show only selection)";
-            document.querySelectorAll('.spotlight-img').forEach(img => img.style.display = 'none');
-        } else {
-            document.querySelectorAll(".publication").forEach(pub => {
-                if (!pub.classList.contains("spotlight")) {
-                    pub.classList.add("hidden");
-                }
-            });
-            header.textContent = "Selected Publications";
-            this.textContent = "(show all)";
-            document.querySelectorAll('.spotlight-img').forEach(img => img.style.display = 'inline-block');
-        }
-    };
-</script>
+<div id="publicationsContainer">
+    <ul class="list-group-flush p-0">
+        {% for publication in site.data.publications %}
+        <li class="list-group-item publication">
+            <div>
+                <span class="paper-title">
+                    <a href="{% if publication.link %}{{ publication.link }}{% else %}{{ publication.pdf_link }}{% endif %}">{% if publication.spotlight == true %}⭐️{% endif %}{{ publication.title }}</a>
+                </span>
+                {{ publication.authors }}
+                <span class="paper-venue">{{ publication.venue }}, {{ publication.year }},
+                    <a href="{{ publication.pdf_link }}" target="_blank" rel="noopener noreferrer">[PDF]</a>{% if publication.code_link %}, <a href="{{ publication.code_link }}" target="_blank" rel="noopener noreferrer">[CODE]</a>{% endif %}{% if publication.demo_link %}, <a href="{{ publication.demo_link }}" target="_blank" rel="noopener noreferrer">[DEMO]</a>{% endif %}{% if publication.post_link %}, <a href="{{ publication.post_link }}">[BLOG]</a>{% endif %}{% if publication.link %}, <a href="{{ publication.link }}">[WEBSITE]</a>{% endif %}
+                </span>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
