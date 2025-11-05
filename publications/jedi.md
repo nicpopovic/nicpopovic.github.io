@@ -33,6 +33,6 @@ title: "Extractive Fact Decomposition for Interpretable Natural Language Inferen
 <h2>Poster</h2>
 
 <div class="image-caption">
-  <img class="frame" src="/images/jedi/poster.pdf" alt="Re1st Poster" style="max-width: 100%; height: auto;">
-  <span class="caption">Poster presented at EMNLP-2025.</span>
+  <img class="frame" src="/images/jedi/poster.jpeg" alt="Re1st Poster" style="max-width: 100%; height: auto;">
+  <span class="caption">Poster presented at EMNLP 2025.</span>
 </div>
