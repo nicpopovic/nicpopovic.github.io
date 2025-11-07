@@ -3,6 +3,13 @@ layout: publication
 title: "Extractive Fact Decomposition for Interpretable Natural Language Inference in One Forward Pass"
 ---
 
+<h2>Poster</h2>
+
+<div class="image-caption">
+  <img class="frame" src="/images/jedi/poster.jpeg" alt="Re1st Poster" style="max-width: 100%; height: auto;">
+  <span class="caption">Poster presented at EMNLP 2025.</span>
+</div>
+
 <h2>Demo</h2>
 
 <div class="image-caption">
@@ -30,9 +37,16 @@ title: "Extractive Fact Decomposition for Interpretable Natural Language Inferen
     <span class="caption">Interactive demo of JEDI based on deberta-large.</span>
 </div>
 
-<h2>Poster</h2>
+<h2>Dataset (SYRP)</h2>
 
 <div class="image-caption">
-  <img class="frame" src="/images/jedi/poster.jpeg" alt="Re1st Poster" style="max-width: 100%; height: auto;">
-  <span class="caption">Poster presented at EMNLP 2025.</span>
+
+<iframe
+  src="https://huggingface.co/datasets/nicpopovic/syrp-nli/embed/viewer/default/train"
+  frameborder="0"
+  width="100%"
+  height="560px"
+></iframe>
+
+<span class="caption">Dataviewer for <a href="https://huggingface.co/datasets/nicpopovic/syrp-nli">SYRP corpus</a> containing synthetic annotations used to train JEDI. </span>
 </div>
