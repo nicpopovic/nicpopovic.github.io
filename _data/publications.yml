@@ -3,6 +3,7 @@
   year: "2025"
   venue: "EMNLP"
   pdf_link: "https://arxiv.org/pdf/2509.18901"
+  code_link: "https://github.com/nicpopovic/JEDI"
   video_link: "https://webresources1234.s3.eu-north-1.amazonaws.com/jedi_720.m4v"
   type: "long"
   spotlight: true
