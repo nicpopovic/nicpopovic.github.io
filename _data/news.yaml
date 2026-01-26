@@ -1,3 +1,7 @@
+- date: "01/2026"
+  title: "Kaleidoscope"
+  link: "https://kaleidoscope-dataset.github.io"  # Optional link
+  text: " accepted to ICLR'26! Thanks and congrats to everyone involved!"
 - date: "09/2025"
   title: "One paper"
   link: "/publications/jedi"  # Optional link

@@ -1,3 +1,14 @@
+- title: "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation"
+  authors: "Salazar et al."
+  year: "2026"
+  venue: "ICLR 2026"
+  pdf_link: "https://arxiv.org/pdf/2504.07072"
+  type: "long"
+  spotlight: false
+  link: "https://kaleidoscope-dataset.github.io"
+  code_link: "https://github.com/israfelsr/kaleidoscope"
+ 
+
 - title: "Extractive Fact Decomposition for Interpretable Natural Language Inference in One Forward Pass"
   authors: "<u>Nicholas Popovič</u>, Michael Färber"
   year: "2025"
@@ -27,16 +38,6 @@
   tldr: "Synthetic data generation for schema constrained information extraction tasks. Dataset with 5k annotated articles available for future research."
 
 
-- title: "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation"
-  authors: "Salazar et al."
-  year: "2025"
-  venue: "preprint"
-  pdf_link: "https://arxiv.org/pdf/2504.07072"
-  type: "long"
-  spotlight: false
-  link: "https://kaleidoscope-dataset.github.io"
-  code_link: "https://github.com/israfelsr/kaleidoscope"
-  
 - title: "The Effects of Hallucinations in Synthetic Training Data for Relation Extraction"
   authors: "Steven Rogulsky, <u>Nicholas Popovič</u>, Michael Färber"
   year: "2024"
