@@ -1,3 +1,12 @@
+- title: "Benchmarking Uncertainty Calibration in Large Language Model Long-Form Question Answering"
+  authors: "Philip Müller, <u>Nicholas Popovič</u>, Michael Färber, Peter Steinbach"
+  year: "2026"
+  venue: "preprint"
+  pdf_link: "https://arxiv.org/pdf/2602.00279"
+  type: "preprint"
+  spotlight: false
+  code_link: "https://github.com/muelphil/llm-uncertainty-bench"
+
 - title: "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation"
   authors: "Salazar et al."
   year: "2026"
@@ -7,14 +16,6 @@
   spotlight: false
   link: "https://kaleidoscope-dataset.github.io"
   code_link: "https://github.com/israfelsr/kaleidoscope"
-
-- title: "Benchmarking Uncertainty Calibration in Large Language Model Long-Form Question Answering"
-  authors: "Philip Müller, <u>Nicholas Popovič</u>, Michael Färber, Peter Steinbach"
-  year: "2026"
-  venue: "arXiv preprint"
-  pdf_link: "https://arxiv.org/pdf/2602.00279"
-  type: "preprint"
-  spotlight: false
 
 - title: "Extractive Fact Decomposition for Interpretable Natural Language Inference in One Forward Pass"
   authors: "<u>Nicholas Popovič</u>, Michael Färber"
