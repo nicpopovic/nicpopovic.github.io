@@ -185,6 +185,86 @@ h2 {
 .round-image-container {
     max-width: 20%;
     margin: 0px auto;
+    position: relative;
+}
+
+.thought-bubble {
+    position: absolute;
+    top: -30%;
+    left: 45%;
+    transform: translateX(-50%) scale(0);
+    transform-origin: bottom center;
+    background-color: var(--header-background);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px 5px;
+    margin-bottom: 20px;
+    min-width: 160px;
+    max-width: 160px;
+    text-align: center;
+    font-size: 0.75em;
+    font-style: italic;
+    color: var(--header-color);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.thought-bubble.visible {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.thought-bubble::before,
+.thought-bubble::after {
+    content: '';
+    position: absolute;
+    background-color: var(--header-background);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+}
+
+.thought-bubble::before {
+    width: 16px;
+    height: 16px;
+    bottom: -20px;
+    left: 90%;
+    transform: translateX(-50%);
+}
+
+.thought-bubble::after {
+    width: 10px;
+    height: 10px;
+    bottom: -30px;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+#thoughtText {
+    transition: opacity 0.3s ease;
+    display: block;
+    padding-top: 8px;
+}
+
+.thought-venue,
+.thought-year {
+    position: absolute;
+    top: 4px;
+    font-size: 0.75em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.thought-venue {
+    left: 10px;
+}
+
+.thought-year {
+    right: 10px;
+}
+
+.thought-bubble {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .welcome-container {
@@ -281,12 +361,56 @@ h2 {
     .round-image {
         max-width: 100px;
         max-height: 100px;
-        margin: 15px auto;
+        margin: 0;
+        flex-shrink: 0;
     }
 
     .round-image-container {
-        max-width: 100px;
-        margin: 0px auto 15px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        max-width: none;
+        margin: 0 auto 15px auto;
+    }
+
+    .thought-bubble {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: scale(0);
+        transform-origin: left center;
+        margin: 0;
+        min-width: 0;
+        max-width: 0;
+        width: 0;
+        padding: 0;
+        font-size: 0.75em;
+        overflow: hidden;
+        transition: opacity 0.5s ease, transform 0.5s ease, width 0.5s ease, min-width 0.5s ease, max-width 0.5s ease, padding 0.5s ease;
+    }
+
+    .thought-bubble.visible {
+        transform: scale(1);
+        min-width: 120px;
+        max-width: 200px;
+        width: auto;
+        padding: 10px 12px;
+        overflow: visible;
+    }
+
+    .thought-bubble::before {
+        left: -20px;
+        bottom: auto;
+        top: 20%;
+        transform: translateY(-50%);
+    }
+
+    .thought-bubble::after {
+        left: -32px;
+        bottom: auto;
+        top: 30%;
+        transform: translateY(-50%);
     }
 
     .welcome-container {

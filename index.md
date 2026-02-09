@@ -6,6 +6,11 @@ title: Welcome
 <div class="welcome-container">
     <div class="round-image-container">
         <img src="/images/me_web.png" alt="Portrait" class="round-image">
+        <a class="thought-bubble" id="thoughtBubble" href="#">
+            <span class="thought-venue" id="thoughtVenue"></span>
+            <span class="thought-year" id="thoughtYear"></span>
+            <span id="thoughtText"></span>
+        </a>
     </div>
 
     <div class="welcome-text">
@@ -111,3 +116,59 @@ title: Welcome
         {% endfor %}
     </ul>
 </div>
+
+<script>
+(function() {
+    const items = [
+        {% for publication in site.data.publications %}
+        {% if publication.research_question %}
+        { question: "{{ publication.research_question }}", year: "{{ publication.year }}", venue: "{% if publication.short_venue %}{{ publication.short_venue }}{% else %}{{ publication.venue }}{% endif %}", link: "{% if publication.link %}{{ publication.link }}{% else %}{{ publication.pdf_link }}{% endif %}" },
+        {% endif %}
+        {% endfor %}
+    ];
+
+    // Fisher-Yates shuffle
+    for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [items[i], items[j]] = [items[j], items[i]];
+    }
+
+    const thoughtBubble = document.getElementById('thoughtBubble');
+    const thoughtText = document.getElementById('thoughtText');
+    const thoughtYear = document.getElementById('thoughtYear');
+    const thoughtVenue = document.getElementById('thoughtVenue');
+    let currentIndex = 0;
+
+    function updateDisplay(item) {
+        thoughtText.textContent = item.question;
+        thoughtYear.textContent = item.year;
+        thoughtVenue.textContent = item.venue;
+        thoughtBubble.href = item.link;
+    }
+
+    function showNextQuestion() {
+        thoughtText.style.opacity = 0;
+        thoughtYear.style.opacity = 0;
+        thoughtVenue.style.opacity = 0;
+        setTimeout(() => {
+            currentIndex = (currentIndex + 1) % items.length;
+            updateDisplay(items[currentIndex]);
+            thoughtText.style.opacity = 1;
+            thoughtYear.style.opacity = 1;
+            thoughtVenue.style.opacity = 1;
+        }, 300);
+    }
+
+    setTimeout(() => {
+        // Set initial content before showing
+        updateDisplay(items[currentIndex]);
+        thoughtText.style.opacity = 1;
+        thoughtYear.style.opacity = 1;
+        thoughtVenue.style.opacity = 1;
+
+        // Then animate in
+        thoughtBubble.classList.add('visible');
+        setInterval(showNextQuestion, 10000);
+    }, 5000);
+})();
+</script>

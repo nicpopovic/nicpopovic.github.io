@@ -6,6 +6,7 @@
   type: "preprint"
   spotlight: false
   code_link: "https://github.com/muelphil/llm-uncertainty-bench"
+  research_question: "Do AI models know when they're unsure?"
   ai_summary: "❓ Do AI models know when they're unsure? 💡 Barely—self-reported confidence is unreliable, but checking consistency across multiple answers helps."
 
 - title: "Kaleidoscope: In-language Exams for Massively Multilingual Vision Evaluation"
@@ -17,6 +18,7 @@
   spotlight: false
   link: "https://kaleidoscope-dataset.github.io"
   code_link: "https://github.com/israfelsr/kaleidoscope"
+  research_question: "Can AI understand images in non-English languages?"
   ai_summary: "❓ Can AI understand images in non-English languages? 💡 Poorly—especially for low-resource languages and image-heavy questions."
 
 - title: "Extractive Fact Decomposition for Interpretable Natural Language Inference in One Forward Pass"
@@ -32,12 +34,14 @@
   abstract: "Recent works in Natural Language Inference (NLI) and related tasks, such as automated fact-checking, employ atomic fact decomposition to enhance interpretability and robustness. For this, existing methods rely on resource-intensive generative large language models (LLMs) to perform decomposition. We propose JEDI, an encoder-only architecture that jointly performs extractive atomic fact decomposition and interpretable inference without requiring generative models during inference. To facilitate training, we produce a large corpus of synthetic rationales covering multiple NLI benchmarks. Experimental results demonstrate that JEDI achieves competitive accuracy in distribution and significantly improves robustness out of distribution and in adversarial settings over models based solely on extractive rationale supervision. Our findings show that interpretability and robust generalization in NLI can be realized using encoder-only architectures and synthetic rationales."
   tldr: "An interpretable NLI architecture applying fact decomposition without the need for text generation via LLMs at inference."
   "link": "/publications/jedi"
+  research_question: "Can a small model fact-check by breaking claims into pieces?"
   ai_summary: "❓ Can a small model fact-check by breaking claims into pieces? 💡 Yes—no expensive large model needed."
 
 - title: "DocIE@XLLM25: In-Context Learning for Information Extraction using Fully Synthetic Demonstrations"
   authors: "<u>Nicholas Popovič</u>, Ashish Kangen, Tim Schopf, Michael Färber"
   year: "2025"
   venue: "XLLM @ ACL (workshop)"
+  short_venue: "XLLM@ACL"
   pdf_link: "https://aclanthology.org/2025.xllm-1.26.pdf"
   type: "workshop"
   spotlight: false
@@ -46,15 +50,18 @@
   "link": "/publications/docie"
   abstract: "Large, high-quality annotated corpora remain scarce in document-level entity and relation extraction in zero-shot or few-shot settings.In this paper, we present a fully automatic, LLM-based pipeline for synthetic data generation and in-context learning for document-level entity and relation extraction.In contrast to existing approaches that rely on manually annotated demonstrations or direct zero-shot inference, our method combines synthetic data generation with retrieval-based in-context learning, using a reasoning-optimized language model.This allows us to build a high-quality demonstration database without manual annotation and to dynamically retrieve relevant examples at inference time.Based on our approach we produce a synthetic dataset of over 5k Wikipedia abstracts with approximately 59k entities and 30k relation triples.Finally, we evaluate in-context learning performance on the DocIE shared task, extracting entities and relations from long documents in a zero-shot setting.The code and synthetic dataset are made available for future research."
   tldr: "Synthetic data generation for schema constrained information extraction tasks. Dataset with 5k annotated articles available for future research."
+  research_question: "Can AI extract info from documents without human-labeled examples?"
   ai_summary: "❓ Can AI extract info from documents without human-labeled examples? 💡 Yes—by generating its own synthetic examples to learn from."
 
 - title: "The Effects of Hallucinations in Synthetic Training Data for Relation Extraction"
   authors: "Steven Rogulsky, <u>Nicholas Popovič</u>, Michael Färber"
   year: "2024"
   venue: "KBC-LM @ ISWC (workshop)"
+  short_venue: "KBC-LM@ISWC"
   pdf_link: "https://arxiv.org/pdf/2410.08393"
   type: "workshop"
   spotlight: false
+  research_question: "Does AI-generated training data with hallucinations cause problems?"
   ai_summary: "❓ Does AI-generated training data with hallucinations cause problems? 💡 Yes—relevant fabrications hurt recall by up to 39%, but filtering helps."
 
 - title: "Embedded Named Entity Recognition using Probing Classifiers"
@@ -70,6 +77,7 @@
   tldr: "A light-weight method for extracting named entities from generated text during streaming text generation with language models."
   "link": "/publications/ember"
   "video_link": "https://s3.amazonaws.com/pf-user-files-01/u-59356/uploads/2024-10-28/dd133a2/EMBER%20EMNLP%20presentation.mp4"
+  research_question: "Can we spot names and entities in LLM-generated text as it streams out?"
   ai_summary: "❓ Can we spot names and entities in AI text as it streams out? 💡 Yes—with only ~1% slowdown."
 
 - title: "VOCAB-EXPANDER: A System for Creating Domain-Specific Vocabularies Based on Word Embeddings"
@@ -87,10 +95,12 @@
   authors: "Milani et al."
   year: "2022"
   venue: "Competitions Track @ NeurIPS (workshop)"
+  short_venue: "CT@NeurIPS"
   pdf_link: "https://proceedings.mlr.press/v220/milani23a/milani23a.pdf"
   type: "workshop"
   spotlight: false
   code_link: "https://github.com/BASALT-2022-Karlsruhe/ka-basalt-2022"
+  research_question: "Can AI learn vague tasks from human feedback?"
   ai_summary: "❓ Can AI learn vague tasks from human feedback? 💡 Somewhat—but vague goals remain very hard."
 
 - title: "Few-Shot Document-Level Relation Extraction"
@@ -106,12 +116,14 @@
   tldr: "A document-level benchmark for few-shot relation extraction. More realistic, more difficult."
   "link": "/publications/fredo"
   video_link: "https://aclanthology.org/2022.naacl-main.421.mp4"
+  research_question: "Can AI find relationships in documents from just a few examples?"
   ai_summary: "❓ Can AI find relationships in documents from just a few examples? 💡 It struggles—much harder than in single sentences."
 
 - title: "AIFB-WebScience at SemEval-2022 Task 12: Relation Extraction First - Using Relation Extraction to Identify Entities"
   authors: "<u>Nicholas Popovič</u>, Walter Laurito, Michael Färber"
   year: "2022"
   venue: "SemEval @ NAACL (workshop)"
+  short_venue: "SemEval@NAACL"
   pdf_link: "https://aclanthology.org/2022.semeval-1.232.pdf"
   type: "workshop"
   spotlight: false
@@ -120,6 +132,7 @@
   "link": "/publications/re1st"
   abstract: "In this paper, we present an end-to-end joint entity and relation extraction approach based on transformer-based language models. We apply the model to the task of linking mathematical symbols to their descriptions in LaTeX documents. In contrast to existing approaches, which perform entity and relation extraction in sequence, our system incorporates information from relation extraction into entity extraction. This means that the system can be trained even on data sets where only a subset of all valid entity spans is annotated. We provide an extensive evaluation of the proposed system and its strengths and weaknesses. Our approach, which can be scaled dynamically in computational complexity at inference time, produces predictions with high precision and reaches 3rd place in the leaderboard of SemEval-2022 Task 12. For inputs in the domain of physics and math, it achieves high relation extraction macro F1 scores of 95.43% and 79.17%, respectively. The code used for training and evaluating our models is available at: https://github.com/nicpopovic/RE1st"
   tldr: "An end-to-end joint entity and relation extraction approach applied to linking mathematical symbols to their descriptions in LaTeX documents."
+  research_question: "Can we decode math symbols in papers by finding relationships first?"
   ai_summary: "❓ Can we decode math symbols in papers by finding relationships first? 💡 Yes—and it works even with incomplete training labels."
 
 - title: "Which Publications' Metadata Are in Which Bibliographic Databases? A System for Exploration"
