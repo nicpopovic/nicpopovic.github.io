@@ -184,6 +184,7 @@ h2 {
 
 .round-image-container {
     max-width: 20%;
+    max-height: 160px;
     margin: 0px auto;
     position: relative;
 }
@@ -371,6 +372,7 @@ h2 {
         justify-content: center;
         gap: 15px;
         max-width: none;
+        max-height: 100px;
         margin: 0 auto 15px auto;
     }
 
