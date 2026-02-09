@@ -230,6 +230,32 @@ h2 {
     margin-bottom: 0.5em;
 }
 
+.publication-row {
+    position: relative;
+    width: 100%;
+}
+
+.publication-content {
+    width: 100%;
+}
+
+.ai-summary {
+    display: none;
+}
+
+.ai-slop-warning {
+    display: none;
+}
+
+.ai-summary-label {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-size: 0.7em;
+    color: #999;
+    font-style: italic;
+}
+
 .hidden {
     opacity: 0;
     height: 0;
@@ -347,5 +373,84 @@ h2 {
         margin: auto;
         margin-top: 2em;
         font-size: 1em;
+    }
+}
+
+/* Extra large screens - show margin notes */
+@media screen and (min-width: 1850px) {
+    .ai-summary {
+        display: block;
+        position: absolute;
+        top: 0.5em;
+        left: -420px;
+        width: 400px;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 12px 12px;
+        font-size: 0.65em;
+        color: #555;
+    }
+
+    .ai-slop-warning {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        position: absolute;
+        left: -420px;
+        top: -80px;
+        width: 400px;
+    }
+
+    .ai-slop-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+
+    .ai-slop-bubble {
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        border-top-left-radius: 4px;
+        padding: 10px 14px;
+        font-size: 0.65em;
+        color: #555;
+        position: relative;
+    }
+
+    .ai-slop-bubble::after {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 12px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent #ccc transparent transparent;
+    }
+
+    #publicationsContainer {
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 1850px) and (prefers-color-scheme: dark) {
+    .ai-summary {
+        background-color: #3a3a3a;
+        border-color: #555;
+        color: #bbb;
+    }
+    .ai-summary-label {
+        color: #777;
+    }
+    .ai-slop-bubble {
+        background-color: #3a3a3a;
+        border-color: #555;
+        color: #bbb;
+    }
+    .ai-slop-bubble::after {
+        border-color: transparent #555 transparent transparent;
     }
 }

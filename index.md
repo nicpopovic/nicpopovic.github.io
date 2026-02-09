@@ -84,17 +84,28 @@ title: Welcome
 <h2 id="publicationsHeader">publications</h2>
 
 <div id="publicationsContainer">
+    <div class="ai-slop-warning">
+        <img src="/images/me_web.png" alt="Nicholas" class="ai-slop-avatar">
+        <div class="ai-slop-bubble">
+            The short summaries you see below were generated using Claude Opus 4.6. They might not be 100% accurate. Please take with a huge grain of salt :)
+        </div>
+    </div>
     <ul class="list-group-flush p-0">
         {% for publication in site.data.publications %}
         <li class="list-group-item publication">
-            <div>
-                <span class="paper-title">
-                    <a href="{% if publication.link %}{{ publication.link }}{% else %}{{ publication.pdf_link }}{% endif %}">{% if publication.spotlight == true %}⭐️ {% endif %}{{ publication.title }}</a>
-                </span>
-                {{ publication.authors }}
-                <span class="paper-venue">{{ publication.venue }}, {{ publication.year }},
-                    <a href="{{ publication.pdf_link }}" target="_blank" rel="noopener noreferrer">[PDF]</a>{% if publication.code_link %}, <a href="{{ publication.code_link }}" target="_blank" rel="noopener noreferrer">[CODE]</a>{% endif %}{% if publication.demo_link %}, <a href="{{ publication.demo_link }}" target="_blank" rel="noopener noreferrer">[DEMO]</a>{% endif %}{% if publication.post_link %}, <a href="{{ publication.post_link }}">[BLOG]</a>{% endif %}{% if publication.link %}, <a href="{{ publication.link }}">[WEBSITE]</a>{% endif %}
-                </span>
+            <div class="publication-row">
+                <div class="publication-content">
+                    <span class="paper-title">
+                        <a href="{% if publication.link %}{{ publication.link }}{% else %}{{ publication.pdf_link }}{% endif %}">{% if publication.spotlight == true %}⭐️ {% endif %}{{ publication.title }}</a>
+                    </span>
+                    {{ publication.authors }}
+                    <span class="paper-venue">{{ publication.venue }}, {{ publication.year }},
+                        <a href="{{ publication.pdf_link }}" target="_blank" rel="noopener noreferrer">[PDF]</a>{% if publication.code_link %}, <a href="{{ publication.code_link }}" target="_blank" rel="noopener noreferrer">[CODE]</a>{% endif %}{% if publication.demo_link %}, <a href="{{ publication.demo_link }}" target="_blank" rel="noopener noreferrer">[DEMO]</a>{% endif %}{% if publication.post_link %}, <a href="{{ publication.post_link }}">[BLOG]</a>{% endif %}{% if publication.link %}, <a href="{{ publication.link }}">[WEBSITE]</a>{% endif %}
+                    </span>
+                </div>
+                {% if publication.ai_summary %}
+                <div class="ai-summary"><span class="ai-summary-label">AI-generated summary</span>{{ publication.ai_summary | replace: "💡", "<br>💡" }}</div>
+                {% endif %}
             </div>
         </li>
         {% endfor %}
