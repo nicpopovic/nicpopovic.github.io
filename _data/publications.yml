@@ -18,7 +18,7 @@
   spotlight: false
   link: "https://kaleidoscope-dataset.github.io"
   code_link: "https://github.com/israfelsr/kaleidoscope"
-  research_question: "Can AI understand images in non-English languages?"
+  research_question: "Can AI understand image-related exam questions in languages other than English?"
   ai_summary: "❓ Can AI understand images in non-English languages? 💡 Poorly—especially for low-resource languages and image-heavy questions."
 
 - title: "Extractive Fact Decomposition for Interpretable Natural Language Inference in One Forward Pass"
@@ -77,7 +77,7 @@
   tldr: "A light-weight method for extracting named entities from generated text during streaming text generation with language models."
   "link": "/publications/ember"
   "video_link": "https://s3.amazonaws.com/pf-user-files-01/u-59356/uploads/2024-10-28/dd133a2/EMBER%20EMNLP%20presentation.mp4"
-  research_question: "Can we spot entities in LLM-generated text while its generating?"
+  research_question: "Can we spot entities in LLM-generated text while its being generated?"
   ai_summary: "❓ Can we spot names and entities in AI text as it streams out? 💡 Yes—with only ~1% slowdown."
 
 - title: "VOCAB-EXPANDER: A System for Creating Domain-Specific Vocabularies Based on Word Embeddings"
