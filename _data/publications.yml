@@ -25,7 +25,7 @@
   authors: "<u>Nicholas Popovič</u>, Michael Färber"
   year: "2025"
   venue: "EMNLP"
-  pdf_link: "https://arxiv.org/pdf/2509.18901"
+  pdf_link: "https://aclanthology.org/2025.emnlp-main.1615.pdf"
   code_link: "https://github.com/nicpopovic/JEDI"
   video_link: "https://webresources1234.s3.eu-north-1.amazonaws.com/jedi_720.m4v"
   type: "long"
@@ -34,6 +34,20 @@
   abstract: "Recent works in Natural Language Inference (NLI) and related tasks, such as automated fact-checking, employ atomic fact decomposition to enhance interpretability and robustness. For this, existing methods rely on resource-intensive generative large language models (LLMs) to perform decomposition. We propose JEDI, an encoder-only architecture that jointly performs extractive atomic fact decomposition and interpretable inference without requiring generative models during inference. To facilitate training, we produce a large corpus of synthetic rationales covering multiple NLI benchmarks. Experimental results demonstrate that JEDI achieves competitive accuracy in distribution and significantly improves robustness out of distribution and in adversarial settings over models based solely on extractive rationale supervision. Our findings show that interpretability and robust generalization in NLI can be realized using encoder-only architectures and synthetic rationales."
   tldr: "An interpretable NLI architecture applying fact decomposition without the need for text generation via LLMs at inference."
   "link": "/publications/jedi"
+  demos:
+    - title: "JEDI Demo"
+      description: "NLI demo: JEDI decomposes premises into extractive atomic facts and predicts fact-level entailment/contradiction/neutral in one forward pass, without generative LLMs at inference time."
+      embed_url: "https://jedi.nicpopovic.com/demo/?__fullscreen=true"
+      paper_link: "/publications/jedi"
+      embed_height: 650
+      mobile_embed_height: 1050
+  datasets:
+    - title: "SYRP Dataset"
+      description: "Dataviewer for the SYRP corpus containing synthetic annotations used to train JEDI."
+      embed_url: "https://huggingface.co/datasets/nicpopovic/syrp-nli/embed/viewer/default/train"
+      paper_link: "/publications/jedi"
+      embed_height: 560
+      mobile_embed_height: 560
   research_question: "Can a small encoder model perform fact decomposition?"
   ai_summary: "❓ Can a small model fact-check by breaking claims into pieces? 💡 Yes—no expensive large model needed."
 
@@ -48,6 +62,13 @@
   code_link: "https://github.com/nicpopovic/docie-xllm25"
   video_link: "https://webresources1234.s3.eu-north-1.amazonaws.com/docie.m4v"
   "link": "/publications/docie"
+  datasets:
+    - title: "DocIE Dataset"
+      description: "Interactive data viewer for the synthetic demonstrations dataset."
+      embed_url: "https://nicpopovic-vital-articles-synth-explorer.hf.space"
+      paper_link: "/publications/docie"
+      embed_height: 850
+      mobile_embed_height: 850
   abstract: "Large, high-quality annotated corpora remain scarce in document-level entity and relation extraction in zero-shot or few-shot settings.In this paper, we present a fully automatic, LLM-based pipeline for synthetic data generation and in-context learning for document-level entity and relation extraction.In contrast to existing approaches that rely on manually annotated demonstrations or direct zero-shot inference, our method combines synthetic data generation with retrieval-based in-context learning, using a reasoning-optimized language model.This allows us to build a high-quality demonstration database without manual annotation and to dynamically retrieve relevant examples at inference time.Based on our approach we produce a synthetic dataset of over 5k Wikipedia abstracts with approximately 59k entities and 30k relation triples.Finally, we evaluate in-context learning performance on the DocIE shared task, extracting entities and relations from long documents in a zero-shot setting.The code and synthetic dataset are made available for future research."
   tldr: "Synthetic data generation for schema constrained information extraction tasks. Dataset with 5k annotated articles available for future research."
   research_question: "Can AI learn to extract information from documents based on generated examples?"
@@ -76,6 +97,13 @@
   abstract: "Streaming text generation, has become a common way of increasing the responsiveness of language model powered applications such as chat assistants. At the same time, extracting semantic information from generated text is a useful tool for applications such as automated fact checking or retrieval augmented generation. Currently, this requires either separate models during inference, which increases computational cost, or destructive fine-tuning of the language model. Instead, we propose an approach called EMBER which enables streaming named entity recognition in decoder-only language models without fine-tuning them and while incurring minimal additional computational cost at inference time. Specifically, our experiments show that EMBER maintains high token generation rates, with only a negligible decrease in speed of around 1% compared to a 43.64% slowdown measured for a baseline. We make our code and data available online, including a toolkit for training, testing, and deploying efficient token classification models optimized for streaming text generation."
   tldr: "A light-weight method for extracting named entities from generated text during streaming text generation with language models."
   "link": "/publications/ember"
+  demos:
+    - title: "EMBER Demo"
+      description: "Interactive streaming NER demo: EMBER extracts entity spans from a decoder-only LM's internal representations during generation, enabling simultaneous text generation and tagging with minimal latency overhead."
+      embed_url: "https://ember.nicpopovic.com/demo/?__fullscreen=true"
+      paper_link: "/publications/ember"
+      embed_height: 620
+      mobile_embed_height: 730
   "video_link": "https://s3.amazonaws.com/pf-user-files-01/u-59356/uploads/2024-10-28/dd133a2/EMBER%20EMNLP%20presentation.mp4"
   research_question: "Can we spot entities in LLM-generated text while its being generated?"
   ai_summary: "❓ Can we spot names and entities in AI text as it streams out? 💡 Yes—with only ~1% slowdown."

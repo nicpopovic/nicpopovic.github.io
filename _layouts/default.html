@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    {% assign normalized_url = page.url | replace: '.html', '' %}
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark" 
          style="background-color: var(--header-background); border-bottom: 1px solid black;">
         <div class="container-fluid">
@@ -22,7 +23,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">about</a>
+                        <a class="nav-link{% if normalized_url == '' or normalized_url == '/' or normalized_url == '/index' %} nav-link-active{% endif %}" href="/">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link{% if normalized_url == '/demos' %} nav-link-active{% endif %}" href="/demos">demos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link{% if normalized_url == '/datasets' %} nav-link-active{% endif %}" href="/datasets">datasets</a>
                     </li>
                 </ul>
             </div>

@@ -43,6 +43,10 @@ html, body {
     color: var(--link-color);
 }
 
+.nav-link-active {
+    color: var(--bs-navbar-brand-color)!important;
+}
+
 .blog-post {
     text-align: justify;
 }
@@ -319,6 +323,22 @@ h2 {
 
 .publication-content {
     width: 100%;
+}
+
+.demo-list {
+    display: block;
+}
+
+.demo-item {
+    margin-bottom: 2rem;
+}
+
+.demo-item p {
+    margin-bottom: 0.6rem;
+}
+
+.demo-meta {
+    font-style: italic;
 }
 
 .ai-summary {
