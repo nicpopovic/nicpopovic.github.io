@@ -1,6 +1,7 @@
 domain: nicpopovic.github.io
 url: https://nicpopovic.github.io
 baseurl: /
+title: Nicholas Popovič
 
 # Bump this when you change main.css to bust browser cache
 css_version: 5
