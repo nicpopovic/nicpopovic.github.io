@@ -27,7 +27,7 @@
   venue: "EMNLP"
   pdf_link: "https://aclanthology.org/2025.emnlp-main.1615.pdf"
   code_link: "https://github.com/nicpopovic/JEDI"
-  video_link: "https://webresources1234.s3.eu-north-1.amazonaws.com/jedi_720.m4v"
+  video_link: "https://underline.io/embed/131369-extractive-fact-decomposition-for-interpretable-natural-language-inference-in-one-forward-pass"
   type: "long"
   spotlight: true
   image: "/images/jedi-spotlight.jpg"
@@ -60,7 +60,7 @@
   type: "workshop"
   spotlight: false
   code_link: "https://github.com/nicpopovic/docie-xllm25"
-  video_link: "https://webresources1234.s3.eu-north-1.amazonaws.com/docie.m4v"
+  video_link: "https://underline.io/embed/125074-docieatxllm25-uieprompter-a-unified-training-free-framework-for-universal-document-level-information-extraction-via-structured-prompt"
   "link": "/publications/docie"
   datasets:
     - title: "DocIE Dataset"
