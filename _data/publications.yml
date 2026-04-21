@@ -1,3 +1,14 @@
+- title: "Tracing Relational Knowledge Recall in Large Language Models"
+  authors: "<u>Nicholas Popovič</u>, Michael Färber"
+  year: "2026"
+  venue: "ACL (findings)"
+  type: "long"
+  spotlight: true
+  image: "/images/tracing-spotlight.png"
+  abstract: "We study how large language models recall relational knowledge during text generation, with a focus on identifying latent representations suitable for relation classification via linear probes. Prior work shows how attention heads and MLPs interact to resolve subject, predicate, and object, but it remains unclear which representations support faithful linear relation classification and why some relation types are easier to capture linearly than others. We systematically evaluate different latent representations derived from attention head and MLP contributions, showing that per-head attention contributions to the residual stream are comparatively strong features for linear relation classification. Feature attribution analyses of the trained probes, as well as characteristics of the different relation types, reveal clear correlations between probe accuracy and relation specificity, entity connectedness, and how distributed the signal on which the probe relies is across attention heads. Finally, we show how token-level feature attribution of probe predictions can be used to reveal probe behavior in further detail."
+  research_question: "How well can we read relational knowledge out of an LLM's internal representations?"
+  ai_summary: "❓ Can we tell which relation an AI is about to express by inspecting its internal state? 💡 Yes—specific attention heads carry the signal, but how well this works depends strongly on the relation."
+
 - title: "Benchmarking Uncertainty Calibration in Large Language Model Long-Form Question Answering"
   authors: "Philip Müller, <u>Nicholas Popovič</u>, Michael Färber, Peter Steinbach"
   year: "2026"

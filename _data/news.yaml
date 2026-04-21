@@ -1,5 +1,7 @@
 - date: "04/2026"
-  text: "One paper accepted to ACL'2026 (findings)!"
+  title: "One paper"
+  text: " accepted to ACL'2026 (findings)!"
+  link: "/publications/tracing"  # Optional link
 - date: "01/2026"
   title: "Kaleidoscope"
   link: "https://kaleidoscope-dataset.github.io"  # Optional link
