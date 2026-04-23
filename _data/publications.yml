@@ -10,6 +10,7 @@
   ai_summary: "❓ Can we tell which relation an AI is about to express by inspecting its internal state? 💡 Yes—specific attention heads carry the signal, but how well this works depends strongly on the relation."
   "link": "/publications/tracing"
   tldr: "Linear probes on per-head attention contributions for relation classification, with attribution to attention heads and source tokens."
+  pdf_link: "https://arxiv.org/pdf/2604.19934"
 
 - title: "Benchmarking Uncertainty Calibration in Large Language Model Long-Form Question Answering"
   authors: "Philip Müller, <u>Nicholas Popovič</u>, Michael Färber, Peter Steinbach"
