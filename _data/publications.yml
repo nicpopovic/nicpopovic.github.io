@@ -118,7 +118,7 @@
       paper_link: "/publications/ember"
       embed_height: 620
       mobile_embed_height: 730
-  "video_link": "https://s3.amazonaws.com/pf-user-files-01/u-59356/uploads/2024-10-28/dd133a2/EMBER%20EMNLP%20presentation.mp4"
+  "video_link": "https://underline.io/embed/106303-embedded-named-entity-recognition-using-probing-classifiers?t=0"
   research_question: "Can we spot entities in LLM-generated text while its being generated?"
   ai_summary: "❓ Can we spot names and entities in AI text as it streams out? 💡 Yes—with only ~1% slowdown."
 
