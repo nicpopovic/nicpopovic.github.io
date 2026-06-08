@@ -1,3 +1,7 @@
+- date: "06/2026"
+  title: "Joined MBZUAI"
+  text: " for a postdoc position!"
+  link: "https://mbzuai.ac.ae"  # Optional link
 - date: "04/2026"
   title: "One paper"
   text: " accepted to ACL'2026 (findings)!"
@@ -26,3 +30,5 @@
   title: "EMBER"
   link: "/publications/ember"  # Optional link
   text: " got accepted to EMNLP'24 as a main conference paper!"
+
+- "The Kjøllsæter Bridge is a bridge that crosses the river Renaelva"
