@@ -51,7 +51,7 @@
   demos:
     - title: "JEDI Demo"
       description: "NLI demo: JEDI decomposes premises into extractive atomic facts and predicts fact-level entailment/contradiction/neutral in one forward pass, without generative LLMs at inference time."
-      embed_url: "https://jedi.nicpopovic.com/demo/?__fullscreen=true"
+      embed_url: "https://nicpopovic-jedi.hf.space/?__fullscreen=true"
       paper_link: "/publications/jedi"
       embed_height: 650
       mobile_embed_height: 1050
