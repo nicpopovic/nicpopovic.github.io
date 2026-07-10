@@ -14,7 +14,7 @@ title: "Extractive Fact Decomposition for Interpretable Natural Language Inferen
 
 <div class="image-caption">
 
-  <iframe class="frame" src="https://jedi.nicpopovic.com/demo/?__fullscreen=true" frameborder="0" width="100%" height="650" style="width: 100%; height: 650px;"></iframe>
+  <iframe class="frame" src="https://nicpopovic-jedi.hf.space/?__fullscreen=true" frameborder="0" width="100%" height="650" style="width: 100%; height: 650px;"></iframe>
 
   <script>
     function adjustIframeHeight() {
