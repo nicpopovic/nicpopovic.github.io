@@ -11,6 +11,7 @@
   "link": "/publications/tracing"
   tldr: "Linear probes on per-head attention contributions for relation classification, with attribution to attention heads and source tokens."
   pdf_link: "https://arxiv.org/pdf/2604.19934"
+  video_link: "https://underline.io/embed/153567-tracing-relational-knowledge-recall-in-large-language-models"
 
 - title: "Benchmarking Uncertainty Calibration in Large Language Model Long-Form Question Answering"
   authors: "Philip Müller, <u>Nicholas Popovič</u>, Michael Färber, Peter Steinbach"
