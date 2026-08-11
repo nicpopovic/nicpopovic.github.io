@@ -16,12 +16,11 @@ title: Welcome
     <div class="welcome-text">
         <p>Hi, my name is <strong>Nicholas Popovič</strong>.</p>
         <p>
-            I am a postdoctoral researcher at <a href="https://mbzuai.ac.ae" target="_blank" rel="noopener noreferrer">MBZUAI</a>, working with <a href="https://ritual-mbzuai.github.io/web/" target="_blank" rel="noopener noreferrer">Thamar Solorio</a>.
+            I am a researcher at <a href="https://mbzuai.ac.ae" target="_blank" rel="noopener noreferrer">MBZUAI</a>, working with <a href="https://ritual-mbzuai.github.io/web/" target="_blank" rel="noopener noreferrer">Thamar Solorio</a>.
             Prior to that I was a PhD student in <a href="https://faerber-lab.github.io" target="_blank" rel="noopener noreferrer">Michael Färber</a>'s group at <a href="https://tu-dresden.de" target="_blank" rel="noopener noreferrer">TU Dresden</a> & <a href="https://scads.ai" target="_blank" rel="noopener noreferrer">ScaDs.AI</a> and a member of the <a href="https://aifb.kit.edu/web/Web_Science" target="_blank" rel="noopener noreferrer">Web Science group</a> at <a href="https://www.kit.edu/" target="_blank" rel="noopener noreferrer">Karlsruhe Institute of Technology</a>.
         </p>
         <p>
-            My research focuses on natural language processing and machine learning, particularly on 
-            representation learning for information extraction.
+            My research focuses on natural language processing and machine learning, particularly on language models as tools for representing and accessing information.
         </p>
         <p>
             You can contact me via 
