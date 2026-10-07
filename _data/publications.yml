@@ -1,3 +1,10 @@
+- title: "Does Modern Standard Arabic (MSA) Dominate Arabic Dialects in LLMs?"
+  authors: "Abdu Sallouh, <u>Nicholas Popovič</u>, Michael Färber"
+  year: "2026"
+  venue: "EMNLP"
+  type: "short"
+  spotlight: false
+
 - title: "Tracing Relational Knowledge Recall in Large Language Models"
   authors: "<u>Nicholas Popovič</u>, Michael Färber"
   year: "2026"
@@ -13,12 +20,12 @@
   pdf_link: "https://arxiv.org/pdf/2604.19934"
   video_link: "https://underline.io/embed/153567-tracing-relational-knowledge-recall-in-large-language-models"
 
-- title: "Benchmarking Uncertainty Calibration in Large Language Model Long-Form Question Answering"
+- title: "Semantic Calibration Prevails Where Token Confidence Fails: Benchmarking Long-Form Scientific QA"
   authors: "Philip Müller, <u>Nicholas Popovič</u>, Michael Färber, Peter Steinbach"
   year: "2026"
-  venue: "preprint"
+  venue: "UncertaiNLP @ EMNLP (workshop)"
   pdf_link: "https://arxiv.org/pdf/2602.00279"
-  type: "preprint"
+  type: "workshop"
   spotlight: false
   code_link: "https://github.com/muelphil/llm-uncertainty-bench"
   research_question: "How well can we detect when LLMs are unsure in long-form QA settings?"
