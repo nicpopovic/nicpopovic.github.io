@@ -3,7 +3,10 @@
   year: "2026"
   venue: "EMNLP"
   type: "short"
+  code_link: "https://github.com/abduABS/MSA_Dominance_LLM"
   spotlight: false
+  "link": "https://abdu.codes/arabicllm/"
+  pdf_link: "https://abdu.codes/Sallouh_EMNLP2026_MSA_Dominance.pdf"
 
 - title: "Tracing Relational Knowledge Recall in Large Language Models"
   authors: "<u>Nicholas Popovič</u>, Michael Färber"
