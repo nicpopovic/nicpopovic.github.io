@@ -5,7 +5,7 @@
 - date: "08/2026"
   title: "One paper"
   text: " accepted to EMNLP'26!"
-  link: "#"  # Optional link
+  link: "https://arxiv.org/pdf/2610.11510"  # Optional link
 - date: "06/2026"
   title: "Joined MBZUAI"
   text: " for a postdoc position!"
