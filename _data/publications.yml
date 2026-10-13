@@ -3,6 +3,8 @@
   year: "2026"
   venue: "EMNLP"
   type: "short"
+  research_question: "Do LLMs internally route Arabic dialects through Modern Standard Arabic?"
+  ai_summary: "❓ Do AI models secretly think in standard Arabic when reading dialects? 💡 No—no variety dominates internally, so the MSA bias in outputs comes from elsewhere."
   code_link: "https://github.com/abduABS/MSA_Dominance_LLM"
   spotlight: false
   "link": "https://abdu.codes/arabicllm/"
