@@ -10,6 +10,10 @@
   title: "Joined MBZUAI"
   text: " for a postdoc position!"
   link: "https://mbzuai.ac.ae"  # Optional link
+- date: "05/2026"
+  title: ""
+  text: "Submitted my dissertation!"
+  link: "#"  # Optional link
 - date: "04/2026"
   title: "One paper"
   text: " accepted to ACL'26 (findings)!"
