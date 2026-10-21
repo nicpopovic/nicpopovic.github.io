@@ -22,8 +22,9 @@
   ai_summary: "❓ Can we tell which relation an AI is about to express by inspecting its internal state? 💡 Yes—specific attention heads carry the signal, but how well this works depends strongly on the relation."
   "link": "/publications/tracing"
   tldr: "Linear probes on per-head attention contributions for relation classification, with attribution to attention heads and source tokens."
-  pdf_link: "https://arxiv.org/pdf/2604.19934"
+  pdf_link: "https://aclanthology.org/2026.findings-acl.2160.pdf"
   video_link: "https://underline.io/embed/153567-tracing-relational-knowledge-recall-in-large-language-models"
+  code_link: "https://github.com/nicpopovic/tracing-relational-knowledge-recall"
 
 - title: "Semantic Calibration Prevails Where Token Confidence Fails: Benchmarking Long-Form Scientific QA"
   authors: "Philip Müller, <u>Nicholas Popovič</u>, Michael Färber, Peter Steinbach"
